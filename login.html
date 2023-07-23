@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centro educativo - Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://getbootstrap.com/docs/4.6/components/alerts/">
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script>
+        function obtenerValor(form) {
+        	var idForm = form;
+            var idrol = "rolForm" + idForm;
+            var rol = document.getElementById(idrol).value;
+            var idusu = "username" + idForm;
+            var usuario = document.getElementById(idusu).value;
+            
+            
+            $.ajax({
+                url: "/nol2223/comprobar",
+                method: "GET",
+                data:{"rol": rol, "login": usuario},
+                success: function(response) {
+                    if(response == "true"){
+                    	document.getElementById(idForm).submit();                  	
+                    } else {
+                    	  var rolaterta = "";
+                    	
+                    	  var div = document.createElement("div");
+                    	  div.setAttribute("id", "warning");
+                    	  div.setAttribute("class", "container");
+                    	  // Crear el elemento div alert
+                    	  var divAlert = document.createElement("div");
+                    	  divAlert.setAttribute("class", "alert alert-warning");
+                    	  divAlert.setAttribute("role", "alert");
+                    	  
+                    	  switch (rol) {
+                    	    case "rolalu":
+                    	      rolalerta = "Este usuario no pertenece al grupo Alumnos";
+                    	      break;
+                    	    case "rolpro":
+                    	      rolalerta = "Este usuario no pertenece al grupo Profesores";
+                    	      break;
+                    	    default:
+                    	      rolalerta = "Este usuario no existe";
+                    	    }
+                    	  
+                    	  divAlert.innerHTML = rolalerta;
+
+                    	  // Agregar el div row al div container
+                    	  div.appendChild(divAlert);
+
+                    	  // Agregar el div container al cuerpo del documento
+                    	  document.body.appendChild(div);
+                    	  
+                    	  document.getElementById("username1").value = "";
+                    	  document.getElementById("password1").value = "";
+                    	  
+                    	  document.getElementById("username2").value = "";
+                    	  document.getElementById("password2").value = "";
+                    	  
+                    	  setTimeout(function() {
+                    		  div.remove();
+                    		}, 2000);
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<style>
+        body {
+            background-color: #9EDBEA;
+        }
+        #warning {
+		  margin-top: 20px;
+		}
+		.navbar-brand {font-size: 30px;}
+		nav {
+			font-size: 30px;
+  			display: flex;
+		  	justify-content: center; 
+		}
+		#container{
+		  margin-top: 50px;
+		}
+		
+    </style>
+<body>
+	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
+			<p class="navbar-brand">Centro Educativo</p>
+		</nav>
+    <div id="container" class="container">    
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Alumnos</h2>
+                        <form id="1" action="j_security_check" method="POST" onsubmit="/nol2223/log2">
+                            <div class="form-group">
+                                <label for="username1">Usuario:</label>
+                                <input type="text" class="form-control" id="username1" name="j_username">
+                                <input type="hidden" id="rolForm1" value="rolalu">
+                            </div>
+                            <div class="form-group">
+                                <label for="password1">Contrase&ntilde;a:</label>
+                                <input type="password" class="form-control" id="password1" name="j_password">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" onclick="obtenerValor(1)">Iniciar Sesi&oacute;n</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Profesores</h2>
+                        <form id="2" action="j_security_check" method="POST"onsubmit="/nol2223/log2">
+                            <div class="form-group">
+                                <label for="username2">Usuario:</label>
+                                <input type="text" class="form-control" id="username2" name="j_username">
+                                <input type="hidden" id="rolForm2" value="rolpro">
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">Contrase&ntilde;a:</label>
+                                <input type="password" class="form-control" id="password2" name="j_password">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" onclick="obtenerValor(2)">Iniciar Sesi&oacute;n</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
