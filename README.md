@@ -19,12 +19,12 @@ En el repositorio se incluyen los dos ficheros html iniciales y una carpeta con 
 ## Capturas
 Aqui se adjuntan una serie de capturas de las páginas resultantes del proyecto.
 
-### Login
+<p align="center">### Login
 
 <img src="fotos_readme/pantallaLog.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/pantallaLoginConErrorPass.png" alt="Logo de Java" style="margin-bottom: 40px;">
 
-### Alumno
+<p align="center">### Alumno
 
 <img src="fotos_readme/pantallaIni.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/pantallaAsig.png" alt="Logo de Java" style="margin-bottom: 40px;">
@@ -32,7 +32,7 @@ Aqui se adjuntan una serie de capturas de las páginas resultantes del proyecto.
 <img src="fotos_readme/pantallaImpresionCertificado.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/matriculaAlum.png" alt="Logo de Java" style="margin-bottom: 40px;">
 
-### Profesor
+<p align="center">### Profesor
 
 <img src="fotos_readme/pantallaIniPro.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/tablaEvaluacionAlumnos.png" alt="Logo de Java" style="margin-bottom: 40px;">
