@@ -8,10 +8,7 @@ La funcionalidad de la aplicación Notas Online se centra en la gestión de cali
 
 ## Tecnologias usadas
 
-<img src="fotos_readme/logo-java.png" alt="Logo de Java" width="130" height="80" style="margin-right: 40px;">   
-<img src="fotos_readme/logo-bootstrap.png" alt="Logo de BootStrap" width="90" height="80" style="margin-right: 40px;"> 
-<img src="fotos_readme/logo-ajax.jpg" alt="Logo de Ajax" width="80" height="80" style="margin-right: 40px;">
-<img src="fotos_readme/logo-servlets.jpeg" alt="Logo de Java Servlets" width="80" height="80" style="margin-right: 40px;">
+<img src="fotos_readme/logo-java.png" alt="Logo de Java" width="130" height="80" style="margin-right: 40px;">   <img src="fotos_readme/logo-bootstrap.png" alt="Logo de BootStrap" width="90" height="80" style="margin-right: 40px;"> <img src="fotos_readme/logo-ajax.jpg" alt="Logo de Ajax" width="80" height="80" style="margin-right: 40px;"><img src="fotos_readme/logo-servlets.jpeg" alt="Logo de Java Servlets" width="80" height="80" style="margin-right: 40px;">
 
 ## Guia de uso
 
