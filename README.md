@@ -24,12 +24,12 @@ Aqui se adjuntan una serie de capturas de las páginas resultantes del proyecto.
 
 ### Login
 
-<img src="fotos_readme/pantallaLog.png" alt="Logo de Java" style="margin-bottom: 40px; margin-top: 40px;">
+<img src="fotos_readme/pantallaLog.png" alt="Logo de Java" style="margin-bottom: 40px; margin-top: 60px;">
 <img src="fotos_readme/pantallaLoginConErrorPass.png" alt="Logo de Java" style="margin-bottom: 40px;">
 
 ### Alumno
 
-<img src="fotos_readme/pantallaIni.png" alt="Logo de Java" style="margin-bottom: 40px; margin-top: 40px;">
+<img src="fotos_readme/pantallaIni.png" alt="Logo de Java" style="margin-bottom: 40px; margin-top: 60px;">
 <img src="fotos_readme/pantallaAsig.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/pantallaCertificado.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/pantallaImpresionCertificado.png" alt="Logo de Java" style="margin-bottom: 40px;">
@@ -37,6 +37,6 @@ Aqui se adjuntan una serie de capturas de las páginas resultantes del proyecto.
 
 ### Profesor
 
-<img src="fotos_readme/pantallaIniPro.png" alt="Logo de Java" style="margin-bottom: 40px; margin-top: 40px;">
+<img src="fotos_readme/pantallaIniPro.png" alt="Logo de Java" style="margin-bottom: 40px; margin-top: 60px;">
 <img src="fotos_readme/tablaEvaluacionAlumnos.png" alt="Logo de Java" style="margin-bottom: 40px;">
 <img src="fotos_readme/carrousel.png" alt="Logo de Java" style="margin-bottom: 40px;">
