@@ -4,7 +4,7 @@
 
 ## Introducción
 
-La funcionalidad de la aplicación Notas Online se centra en la gestión de calificaciones. Los alumnos pueden acceder a sus notas en las asignaturas en las que están matriculados y obtener certificados de calificaciones. Al mismo tiempo, los profesores tienen la capacidad de evaluar a los estudiantes en las materias que imparten
+La funcionalidad de la aplicación Notas Online se centra en la gestión de calificaciones. Los alumnos pueden acceder a sus notas en las asignaturas en las que están matriculados y obtener certificados de calificaciones. Al mismo tiempo, los profesores tienen la capacidad de evaluar a los estudiantes en las materias que imparten.
 
 ## Tecnologias usadas
 
